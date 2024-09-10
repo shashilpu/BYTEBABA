@@ -1,0 +1,58 @@
+﻿@page "/viewer"
+@inject NavigationManager Navigation
+@layout Layout.PDFLayout
+@if (showSuccessMessage)
+{
+    
+    <div style="margin-left:150px;">Data saved successfully!</div>
+}
+<SfButton OnClick="OnClick">Save</SfButton>
+<SfButton OnClick="AnotateClick">Anotate</SfButton>
+<SfPdfViewer2 @ref="viewer" DocumentPath="@DocumentPath"  EnableAnnotationToolbar="true" EnableThumbnailPanel="true" InkAnnotationSettings="@inkannotationSettings">
+    <PdfViewerEvents></PdfViewerEvents>
+</SfPdfViewer2>
+
+@code {
+    SfPdfViewer2 viewer;
+    private bool showSuccessMessage = false;
+
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "param")]
+    public string pdfPath { get; set; }
+    private RenderFragment messageFragment;
+    private string DocumentPath { get; set; }
+    PdfViewerInkAnnotationSettings inkannotationSettings;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (!string.IsNullOrEmpty(pdfPath))
+        {
+            var decodedPath = Uri.UnescapeDataString(pdfPath);
+            var pdfBytes = await System.IO.File.ReadAllBytesAsync(decodedPath);
+            DocumentPath = "data:application/pdf;base64," + Convert.ToBase64String(pdfBytes);
+        }
+
+        inkannotationSettings = new PdfViewerInkAnnotationSettings
+        {
+            FillColor = "#999999",
+            Opacity = 1,
+            StrokeColor = "#999999",
+            Thickness = 2
+        };
+    }
+
+    public async void OnClick(MouseEventArgs args)
+    {
+        await viewer.SetAnnotationModeAsync(AnnotationType.None);
+        await viewer.SaveAsync(pdfPath);
+        showSuccessMessage = true;
+        StateHasChanged();
+    }
+
+    public async void AnotateClick()
+    {
+        showSuccessMessage = false;
+        StateHasChanged();
+        await viewer.SetAnnotationModeAsync(AnnotationType.Ink);
+    }
+}

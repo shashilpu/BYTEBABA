@@ -1,0 +1,29 @@
+﻿@using BYTEBaba.Model.FileSystem
+@typeparam TItem
+@foreach (var item in Items)
+{
+    <li>
+        @if (item.IsDirectory)
+        {
+            @item.Name
+        }
+        else
+        {
+            <a target="_blank" href="/viewer?param=@System.Web.HttpUtility.UrlEncode(item.Path)">@item.Name</a>
+        }
+
+        @if (item.Children.Any())
+        {
+            <ul>
+                <FileSystemTreeNode TItem="TItem" Items="item.Children" />
+
+            </ul>
+        }
+
+    </li>
+}
+
+@code {
+    [Parameter]
+    public List<FileSystemItem> Items { get; set; }
+}
