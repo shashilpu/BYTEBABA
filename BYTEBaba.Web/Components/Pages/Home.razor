@@ -35,35 +35,81 @@
         <h2>Our Work</h2>
         <div class="portfolio-gallery">
             <div class="portfolio-item">
-                <img src="images/project1.jpg" alt="Project 1">
-                <p>Project 1 Description</p>
+                <img src="/bootstrap/images/plm.png" asp-append-version="true" width="300px" alt="Project 1">
+                <p>
+                    Product Life Cycle Management Integration (Kmart Australia)
+                    
+                    The PLMI application is a Kmart .NET microservices app that is designed to manage
+                    product life cycle management in retailing businesses using Docker containers. The
+                    application consists of multiple subsystems, including several e-store UI front ends
+                    (a Web MVC app, a Web SPA, and a native mobile app). It also includes the backend microservices and containers for all required server-side operations. It has 30
+                    Microservice that are communicated to each other through Confluent Kafka event
+                    message.
+
+                </p>
             </div>
             <div class="portfolio-item">
-                <img src="images/project2.jpg" alt="Project 2">
-                <p>Project 2 Description</p>
+                <img src="/bootstrap/Images/health.png" asp-append-version="true" alt="Project 2">
+                <p>
+                    Industry: Industry: Healthcare
+                    Technologies: .NET core 2.2, Vuejs 3.2.4, 7.0.2, SQL Server 2016, C# and Kendo UI
+
+                    This project aimed to care – about the patients, staff, and business of our healthcare
+                    partners. As the experience management leader, we will advance the patient
+                    experience, bring relief to staff, and enable our customers to thrive financially.
+                </p>
             </div>
             <div class="portfolio-item">
-                <img src="images/project3.jpg" alt="Project 3">
-                <p>Project 3 Description</p>
+                <img src="/bootstrap/Images/kmart.jpg" asp-append-version="true" alt="Project 3" style="height:31vh">
+                <p>
+                    Industry: K-MART Support Project
+                    Technologies: .NET core 2.2, Angular 7.0.2, SQL Server 2016, C# and Kendo UI
+
+                    This project aimed to develop a website to allow users to look at the status of their
+                    ordered details. The website provides a smooth user experience using its intuitive
+                    interface to help customers/users manage ordered items like cancellation, change
+                    delivery location, return and integration of multiple accounts.
+                    
+                </p>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p>Email: contact@bytebaba.com</p>
-        <p>Phone: +91-9905016535</p>
-        <p>Address: Devanahalli, Karnataka, India</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <!-- Contact Form -->
+            <div style="flex: 1; min-width: 300px;">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div style="flex: 1; min-width: 300px;">
+                <p><strong>Email:</strong> <a href="mailto:info@bytebaba.com">info@bytebaba.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+916360633806">+91-6360633806</a></p>
+                <p><strong>Address:</strong> Devanahalli, Karnataka, India</p>
+                <p><a href="https://wa.me/6360633806" target="_blank">Chat with us on WhatsApp</a></p>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <div style="margin-top: 20px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d56039.32597656228!2d77.02190139999999!3d28.6160362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1726138741931!5m2!1sen!2sin"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
+
 </div>
 
 <style>
