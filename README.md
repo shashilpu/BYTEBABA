@@ -35,4 +35,3 @@ For more information on how to use BYTEBABA, please refer to our documentation. 
 Contributing
 We welcome contributions! If you’re interested in improving BYTEBABA, please read our CONTRIBUTING.md guide.
 
-Feel free to customize this description further to fit your specific project needs!
