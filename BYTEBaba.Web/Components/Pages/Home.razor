@@ -5,7 +5,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">ByteBaba</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,22 +32,75 @@
 </nav>
 
 <div class="container-fluid py-5">
-    <!-- Hero Section -->
-    <header class="hero text-center mb-5">
-        <h1 class="display-4">Welcome to ByteBaba</h1>
-        <p class="lead">Your partner in IT Consulting, Service Provision, and Product Development</p>
-        <a href="#services" class="btn btn-danger btn-lg mt-4 cta-button">Get Started</a>
+    <!-- Updated Header Section with Carousel -->
+    <header id="headerCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="/bootstrap/Images/pexels-tomfisk-2116721.jpg" class="d-block w-100" alt="Slide 1"
+                     style="height: 600px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4">Welcome to ByteBaba</h1>
+                    <p>Your partner in IT Consulting, Service Provision, and Product Development</p>
+                    <a href="#services" class="btn btn-danger btn-lg mt-4">Get Started</a>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="/bootstrap/Images/pexels-tiger-lily-7109292.jpg" class="d-block w-100" alt="Slide 2"
+                     style="height: 600px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4">Innovative Solutions</h1>
+                    <p>Driving success with cutting-edge technology and expert strategies.</p>
+                    <a href="#portfolio" class="btn btn-danger btn-lg mt-4">View Portfolio</a>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="/bootstrap/Images/pexels-fauxels-3182773.jpg" class="d-block w-100" alt="Slide 3"
+                     style="height: 600px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4">Join Our Journey</h1>
+                    <p>Collaborate with us to transform your business and achieve your goals.</p>
+                    <a href="#contact" class="btn btn-danger btn-lg mt-4">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </header>
 
     <!-- Services Section -->
     <section id="services" class="py-5">
         <h2 class="text-center mb-4">Our Services</h2>
-        <div class="row text-center">
+        <hr class="red-line">
+        <div class="row text-center" style="height: 250px; font-size: 20px;">
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
                         <h3 class="card-title">IT Consulting</h3>
-                        <p class="card-text">Expert advice to optimize your IT infrastructure and strategy.</p>
+                        <p class="card-text">
+                            IT Consulting provides expert guidance to improve your technology systems and strategy. It helps businesses optimize IT infrastructure, streamline processes, enhance security, and support growth through tailored solutions and strategic advice.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -54,7 +108,7 @@
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
                         <h3 class="card-title">Service Provision</h3>
-                        <p class="card-text">Reliable and efficient IT services tailored to your needs.</p>
+                        <p class="card-text">Service Provision delivers reliable and customized IT solutions to meet your business needs. From system management to support services, it ensures smooth operations, enhances performance, and helps maintain a stable IT environment.</p>
                     </div>
                 </div>
             </div>
@@ -62,29 +116,152 @@
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
                         <h3 class="card-title">Product Development</h3>
-                        <p class="card-text">Innovative solutions for web, mobile, and desktop applications.</p>
+                        <p class="card-text">Product Development focuses on creating innovative solutions for web, mobile, and desktop applications. It involves designing, building, and refining products that meet user needs, enhance functionality, and drive business growth with cutting-edge technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center" style="height: 250px; font-size: 20px;">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">MOBILE APPS</h3>
+                        <p class="card-text">We create high-quality mobile apps that bring profit. From idea validation to successful launch.</p>
+                        <span><a class="" href="">iOS app development</a></span><br>
+                        <span><a class="" href="">Android app development</a></span><br>
+                        <span><a class="" href="">Flutter app development</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">WEB SOLUTIONS</h3>
+                        <p class="card-text">
+                            Web solutions provide a wide range of services, from developing simple websites to creating dynamic, feature-rich applications. These include traditional web apps, which offer consistent, multi-functional experiences, Single Page Applications (SPA) for faster, smoother navigation, and Progressive Web Apps (PWA) that combine the best of web and mobile app functionality.
+                        </p>
+                        <a href="#" class="show-more" onclick="toggleText(event)">Show More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">CUSTOM SOFTWARE</h3>
+                        <p class="card-text">Custom software is tailored to your business needs, offering complete control over processes and reducing unnecessary costs. It streamlines operations, boosts efficiency, and scales with your growth, providing a competitive advantage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center" style="height: 250px; font-size: 20px;">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Mobile App Design</h3>
+                        <p class="card-text">Mobile App Design focuses on creating user-friendly and visually appealing apps that maximize profitability. From idea validation to launch, it ensures the app meets user needs and stands out, whether for iOS, Android, or Flutter development.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">UI/UX Design Services</h3>
+                        <p class="card-text">UI/UX Design Services focus on creating intuitive and engaging user experiences for websites and applications. By prioritizing user needs, these services enhance usability and accessibility, ensuring satisfaction and driving business success.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">QA & testing</h3>
+                        <p class="card-text">QA & Testing ensure software quality by identifying issues before launch, enhancing user satisfaction and reliability while reducing costs. This process is crucial for delivering high-performing applications that meet user expectations.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- About Us Section -->
-    <section id="about" class="py-5 bg-light">
+    <section id="about" class="py-5">
         <h2 class="text-center mb-4">About Us</h2>
-        <p class="text-center mx-auto" style="max-width: 800px;">
-            ByteBaba is a leading provider of IT solutions, offering a wide range of services to help businesses achieve their goals.
-            Our team of experts specializes in consulting, service provision, and product development, ensuring that we deliver high-quality solutions tailored to your needs.
-        </p>
+        <hr class="red-line">
+       
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="text-center">
+                    <img src="/bootstrap/Images/pexels-mikhail-nilov-9301198.jpg" alt="" class="about-img" style="width:450px; height:450px; border-radius:50%; object-fit:cover;">
+                  
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="in-content">
+                    <p class="text-center mx-auto" style="max-width: 800px;">
+                        ByteBaba is a leading provider of innovative IT solutions, dedicated to empowering businesses and organizations to achieve their full potential through technology. Founded with a vision to bridge the gap between technology and business, we offer a comprehensive range of services designed to meet the diverse needs of our clients.
+                    </p>
+
+                    <h3 class="text-center mb-3">Our Vision</h3>
+                    <p class="text-center mx-auto" style="max-width: 800px;">
+                        At ByteBaba, our vision is to be a transformative force in the IT industry, fostering innovation and growth. We aim to be the go-to partner for businesses looking to leverage technology for competitive advantage. We aspire to create solutions that not only meet current demands but also anticipate future challenges, ensuring that our clients stay ahead in a rapidly evolving digital landscape.
+                    </p>
+
+                    <h3 class="text-center mb-3">Our Mission</h3>
+                    <p class="text-center mx-auto" style="max-width: 800px;">
+                        Our mission is to deliver high-quality, customized IT solutions that drive efficiency, enhance productivity, and facilitate growth. We are committed to understanding the unique needs of each client, providing expert guidance, and implementing strategies that align with their goals. Through continuous improvement and innovation, we strive to exceed expectations and contribute to our clients’ success.
+                    </p>
+
+                    <h3 class="text-center mb-3">Our Values</h3>
+                    <ul class="text-center mx-auto" style="max-width: 800px; list-style-type: none; padding: 0;">
+                        <li><strong>Integrity:</strong> We believe in doing what is right, even when no one is watching. Transparency and honesty are at the core of our business practices.</li>
+                        <li><strong>Innovation:</strong> We foster a culture of creativity and curiosity. We embrace new ideas and technologies to deliver cutting-edge solutions.</li>
+                        <li><strong>Excellence:</strong> Our commitment to quality drives us to deliver the best services and solutions. We take pride in our work and continually strive for improvement.</li>
+                        <li><strong>Collaboration:</strong> We believe in the power of teamwork. Our approach involves working closely with clients and partners to achieve shared goals.</li>
+                        <li><strong>Customer-Centricity:</strong> Our clients are at the heart of everything we do. We listen to their needs, understand their challenges, and tailor our solutions accordingly.</li>
+                    </ul>
+                   
+                </div>
+            </div>
+       </div>
+        <div class="row align-items-center">
+           <div  class="col-lg-6">
+                <h3 class="text-center mb-3">Why Choose ByteBaba?</h3>
+                <p class="text-center mx-auto" style="max-width: 800px;">
+                    At ByteBaba, we differentiate ourselves through our commitment to quality, innovation, and customer satisfaction. Here’s why businesses choose us as their IT partner:
+                </p>
+                <ul class="text-center mx-auto" style="max-width: 800px; list-style-type: none; padding: 0;">
+                    <li><strong>Expertise:</strong> Our team comprises seasoned professionals with extensive experience across various industries. We leverage this expertise to provide insights and solutions that drive results.</li>
+                    <li><strong>Tailored Solutions:</strong> We understand that one size does not fit all. Our approach involves customizing solutions to meet the unique needs of each client, ensuring maximum impact.</li>
+                    <li><strong>Proven Track Record:</strong> With numerous successful projects under our belt, we have established a reputation for delivering high-quality services that exceed client expectations.</li>
+                    <li><strong>Cutting-Edge Technology:</strong> We stay ahead of the curve by embracing the latest technologies and industry trends. This allows us to deliver innovative solutions that keep our clients competitive.</li>
+                    <li><strong>Customer Support:</strong> Our relationship with clients doesn’t end with project delivery. We offer ongoing support and maintenance, ensuring that your systems continue to perform optimally.</li>
+                </ul>
+           </div>
+           <div class="col-lg-6">
+            <h3 class="text-center mb-3">Our Commitment to Sustainability</h3>
+            <p class="text-center mx-auto" style="max-width: 800px;">
+                At ByteBaba, we are committed to sustainability and social responsibility. We recognize the importance of minimizing our environmental impact and actively seek ways to implement sustainable practices in our operations. From adopting energy-efficient technologies to supporting local communities, we strive to contribute positively to society and the planet.
+            </p>
+
+            <h3 class="text-center mb-3">Join Us on Our Journey</h3>
+            <p class="text-center mx-auto" style="max-width: 800px;">
+                As we continue to grow and evolve, we invite you to join us on our journey. Whether you are a small startup or a large enterprise, ByteBaba is here to support your IT needs. Together, we can harness the power of technology to drive innovation and success.
+            </p>
+            </div>
+       </div>
+      
     </section>
+
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-5">
         <h2 class="text-center mb-4">Our Work</h2>
+        <hr class="red-line">
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="portfolio-item shadow-sm">
-                    <img src="/bootstrap/images/plm.png" class="img-fluid" alt="Project 1" style="height: 250px; object-fit: cover;">
+                    <img src="/bootstrap/images/plm.png" class="img-fluid" alt="Project 1"
+                         style="height: 250px; object-fit: cover;">
                     <div class="p-3">
                         <h4>Product Life Cycle Management</h4>
                         <p>Kmart .NET microservices app managing product lifecycle with Docker and Kafka.</p>
@@ -93,7 +270,8 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="portfolio-item shadow-sm">
-                    <img src="/bootstrap/Images/health.png" class="img-fluid" alt="Project 2" style="height: 250px; object-fit: cover;">
+                    <img src="/bootstrap/Images/health.png" class="img-fluid" alt="Project 2"
+                         style="height: 250px; object-fit: cover;">
                     <div class="p-3">
                         <h4>Healthcare Industry</h4>
                         <p>Optimizing patient and staff experience with .NET Core, Vue.js, and Kendo UI.</p>
@@ -102,7 +280,8 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="portfolio-item shadow-sm">
-                    <img src="/bootstrap/Images/kmart.jpg" class="img-fluid" alt="Project 3" style="height: 250px; object-fit: cover;">
+                    <img src="/bootstrap/Images/kmart.jpg" class="img-fluid" alt="Project 3"
+                         style="height: 250px; object-fit: cover;">
                     <div class="p-3">
                         <h4>K-Mart Support Project</h4>
                         <p>User-friendly interface to manage orders and accounts using .NET Core and Angular.</p>
@@ -115,50 +294,151 @@
     <!-- Contact Section -->
     <section id="contact" class="py-5 bg-light">
         <h2 class="text-center mb-4">Contact Us</h2>
-        <div class="row">
-            <!-- Contact Form -->
-            <div class="col-md-4 mb-4">
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name:</label>
-                        <input type="text" id="name" class="form-control" required>
+        <hr class="red-line">
+        <div class="container mb-5 mt-3">
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-md-7 col-lg-8" style="margin-left: -150px;">
+                    <!-- Google Map -->
+                    <div class="map-in h-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3883.8725656555457!2d77.69575291082023!3d13.233313009032331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1d0a5ccb6be1%3A0x4a82dd40c8ef1ea8!2sCalgary%2C%20House%20of%20Hiranandani!5e0!3m2!1sen!2sin!4v1728106099653!5m2!1sen!2sin"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email:</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message:</label>
-                        <textarea id="message" class="form-control" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send</button>
-                </form>
-            </div>
+                </div>
+                <div class="col-md-5 col-lg-4 mt-4 mt-md-0">
 
-            <!-- Contact Info -->
-            <div class="col-md-2 mt-4">
-                <p><strong>Email:</strong> <a href="mailto:info@bytebaba.com">info@bytebaba.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+916360633806">+91-6360633806</a></p>
-                <p><strong>Address:</strong> Devanahalli, Karnataka, India</p>
-                <p><a href="https://wa.me/6360633806" target="_blank" class="btn btn-outline-success">Chat with us on WhatsApp</a></p>
+                    <div class="card-info d-flex py-3 px-4 rounded bg-white mb-3 d-flex align-items-center">
+                        <i class="fa-solid fa-location-dot fa-2x " style="color:#ef6603;"></i>
+                        <div class="ps-3">
+                            <h6>Office Address</h6>
+                            <p class="mb-0">Devanahalli,Bengluru <br>Karnataka, India.</p>
+                        </div>
+                    </div>
+                    <div class="card-info d-flex py-3 px-4 rounded bg-white mb-3 d-flex align-items-center">
+                        <i class="fa-regular fa-envelope fa-2x" style="color:#ef6603;"></i>
+                        <div class="ps-3">
+                            <h6>Send email</h6>
+                            <a class="text-decoration-none" href="mailto:info@elmcindia.org">info@bytebaba.com</a>
+                        </div>
+                    </div>
+                    <div class="card-info d-flex py-3 px-4 rounded bg-white d-flex align-items-center">
+                        <i class="fa-solid fa-globe fa-2x" style="color:#ef6603;"></i>
+                        <div class="ps-3">
+                            <h6>Our Website</h6>
+                            <a class="text-decoration-none" href="www.elmcindia.org" target="_blank">http://Bytebaba.com</a>
+                        </div>
+                    </div>
+                </div>
+               
+              
             </div>
-            <!-- Google Map -->
-            <div class="col-md-6 mt-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3883.872648896861!2d77.69575827582555!3d13.233307787106627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9e7a515355b2bad%3A0xca7ea21035a1ebd4!2sByte%20Baba%20LLP!5e0!3m2!1sen!2sin!4v1727205517492!5m2!1sen!2sin" width="90%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+           
         </div>
     </section>
+    <!-- WhatsApp Chat Plugin -->
+    <div class="whatsapp-chat">
+        <a href="https://wa.me/6360633806" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" style="width: 60px; height: 60px;">
+        </a>
+    </div>
 
     <footer class="text-center py-3">
         <p>&copy; ByteBaba LLP 2024</p>
     </footer>
 </div>
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 <style>
-    .hero {
-        background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
-        color: white;
-        padding: 80px 20px;
+    .map-in {
+        border: 8px solid #fff;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, .15);
+        iframe
+
+    {
+        min-height: 400px !important;
+        min-width:600px !important;
+    }
+
+    }
+
+    .card-info {
+        box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+    }
+
+    a{
+        color: inherit;
+    }
+
+    h6 {
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    }
+     #contact .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+    .whatsapp-chat {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .whatsapp-chat img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+      
+    .whatsapp-chat img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #contact .col-md-3 {
+        margin-top: 30px;
+    }
+    
+    .h2, h2 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .red-line {
+        border: 0; /* Remove the default border */
+        height: 2px; /* Thickness of the line */
+        background-color: #e50000; /* Color of the line */
+        margin: 20px auto; /* Center the line and add margin */
+        width: 80%; /* Width of the line */
+    }
+    .card-body {
+        position: relative;
+    }
+
+    .card-text {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 3; /* Limit to 3 lines */
+        max-height: 4.5em; /* Adjust according to line height */
+        transition: max-height 0.3s ease; /* Smooth transition */
+    }
+
+        .card-text.expanded {
+            display: block; /* Show full text */
+            max-height: none; /* Allow it to expand fully */
+        }
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
         border-radius: 8px;
     }
 
@@ -187,3 +467,18 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript">
+    function toggleText(event) {
+        event.preventDefault();
+        const cardText = event.target.previousElementSibling;
+        cardText.classList.toggle('expanded');
+
+        // Change the link text based on the state
+        if (cardText.classList.contains('expanded')) {
+            event.target.textContent = 'Show Less';
+        } else {
+            event.target.textContent = 'Show More';
+        }
+    }
+</script>
